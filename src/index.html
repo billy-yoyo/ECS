@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #canvas {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button id="reset-button">Reset</button>
+        <label>Viscosity</label>
+        <input id="viscosity" type="number" value="4">
+        <label>Polytropic Index</label>
+        <input id="polytropicIndex" type="number" value="6">
+        <label>State Constant</label>
+        <input id="stateConstant" type="number" value="1000">
+        <label>Gravity X</label>
+        <input id="gravity-x" type="number" value="0">
+        <label>Gravity Y</label>
+        <input id="gravity-y" type="number" value="0">
+    </div>
+    <canvas id="canvas" width="1700" height="900"></canvas>
+</html>
